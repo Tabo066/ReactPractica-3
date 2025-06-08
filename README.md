@@ -1,3 +1,5 @@
+### EXTRAER "node_modules.rar" ANTES DE EJECUTAR LA APP ###
+# Pagina web estatica venta de autos practica.
 # React + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
