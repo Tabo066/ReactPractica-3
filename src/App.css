@@ -1,0 +1,591 @@
+body{
+text-decoration: none;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+.app{
+width: 100vw;
+height: auto;
+}
+
+h1 { font-family: "Piedra", serif; font-size: 24px; font-style: normal; font-variant: normal; font-weight: 700; line-height: 26.4px; } 
+h2 { font-family: "Bruno Ace SC", sans-serif; font-size: 24px; font-style: normal; font-variant: normal; font-weight: 700; line-height: 26.4px; }
+h3 { font-family: "Bruno Ace SC", sans-serif; font-size: 14px; font-style: normal; font-variant: normal; font-weight: 700; line-height: 15.4px; }
+h4 { font-family: "Bruno Ace SC", sans-serif; font-size: 14px; font-style: normal; font-variant: normal; font-weight: 700; line-height: 15.4px; } 
+p { font-family: "Bruno Ace SC", sans-serif; font-size: 14px; font-style: normal; font-variant: normal; font-weight: 400; line-height: 20px; }
+a { font-family: "Bruno Ace SC", sans-serif; font-size: 14px; font-style: normal; font-variant: normal; font-weight: 400; line-height: 20px; }  
+blockquote { font-family: "Bruno Ace SC", sans-serif; font-size: 21px; font-style: normal; font-variant: normal; font-weight: 400; line-height: 30px; } 
+pre { font-family: "Bruno Ace SC", sans-serif; font-size: 13px; font-style: normal; font-variant: normal; font-weight: 400; line-height: 18.5714px; }
+
+.botonn {
+ margin: 0.5em;
+ background: black;
+ color: white;
+ border: none;
+ border-radius: 0.625em;
+ font-size: 20px;
+ font-weight: bold;
+ cursor: pointer;
+ position: relative;
+ z-index: 1;
+ overflow: hidden;
+}
+
+.botonn:hover {
+ color: black;
+}
+
+.botonn:after {
+ content: "";
+ background: white;
+ position: absolute;
+ z-index: -1;
+ left: -20%;
+ right: -20%;
+ top: 0;
+ bottom: 0;
+ transform: skewX(-45deg) scale(0, 1);
+ transition: all 0.5s;
+}
+
+.botonn:hover:after {
+ transform: skewX(-45deg) scale(1, 1);
+ -webkit-transition: all 0.5s;
+ transition: all 0.5s;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #0077b6;
+    color: white;
+    align-items: center;
+}
+
+header .logo img {
+    width: 120px;
+    border-radius: 100%;
+}
+
+.logo {
+    width: 100px;
+}
+
+
+
+header .chat button {
+    background-color: #00b4d8;
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+}
+
+.main {
+    display: flex;
+    justify-content: center;  
+    align-items: center; 
+    flex-direction: column; 
+    padding: 40px;
+    background-color: white;
+    text-align: center;
+  }
+  
+  .main .cta-container {
+    width: 80%; 
+    text-align: center;
+  }
+  
+  .main .cta-buttons button {
+    background-color: #00b4d8;
+    padding: 15px 25px;
+    border: none;
+    margin: 10px;
+    cursor: pointer;
+  }
+  
+  .main h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    line-height: 1.0;
+  }
+  
+  .main img {
+    max-width: 400px;
+    height: auto;
+  }
+
+.vehicle-categories {
+    padding: 40px;
+    background-color: #0077b6;
+    color: white;
+    text-align: center;
+}
+
+.vehicle-categories .category-cards {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px 0;
+}
+
+.vehicle-categories .card {
+    background-color: white;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 8px;
+    cursor: pointer;
+    flex-grow: 1;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.vehicle-categories .card:hover {
+    transform: scale(1.05);
+}
+
+.vehicle-categories .category-img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.vehicle-categories button {
+    background-color: #00b4d8;
+    padding: 15px 30px;
+    border: none;
+    cursor: pointer;
+}
+
+.vehicle-categories button:hover {
+    background-color: #0091b2;
+}
+
+
+.sell-trade {
+    padding: 40px;
+    background-color: #fff;
+    text-align: center;
+}
+
+.sell-trade h3 {
+    font-size: 2em;
+    color: #333;
+    margin-bottom: 20px;
+    line-height: 1.0;
+}
+
+.sell-trade p {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+}
+
+.sell-trade-frame {
+    display: inline-block;
+    border: 10px solid #0077b6; 
+    border-radius: 12px; 
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+.sell-trade-frame img {
+height: 30vh;
+width: 30vw;
+}
+
+.sell-trade-img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.sell-trade button {
+    background-color: #00b4d8;
+    padding: 15px 30px;
+    border: none;
+    cursor: pointer;
+}
+
+.sell-trade button:hover {
+    background-color: #0091b2;
+}
+
+.payment-info {
+    padding: 40px;
+    background-color: white;
+    text-align: center;
+}
+
+footer {
+    background-color: #0077b6;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+footer .footer-links a {
+    color: white;
+    margin: 0 15px;
+    text-decoration: none;
+}
+
+footer p {
+    margin-top: 10px;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #0077b6;
+    color: white;
+    flex-wrap: wrap;
+}
+header .logo img {
+    width: 120px;
+    max-width: 100%; 
+}
+header .chat button {
+    border-radius: 5px;
+    font-size: 1em;
+    color: white;
+    transition: background-color 0.3s ease;
+    background-color: #00b4d8;
+    padding: 15px 30px;
+    border: none;
+    cursor: pointer;
+}
+
+.main {
+    display: flex;
+    justify-content: space-between;
+    padding: 40px;
+    background-color: white;
+    flex-wrap: wrap; 
+}
+.main .cta-container {
+    width: 60%;
+}
+.main h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+.main .cta-buttons button {
+    border-radius: 5px;
+    font-size: 1em;
+    transition: background-color 0.3s ease;
+    background-color: #00b4d8;
+    padding: 15px 30px;
+    border: none;
+    cursor: pointer;
+}
+.main .cta-buttons button:hover {
+    background-color: #0091b2;
+}
+.main img {
+    max-width: 400px;
+    height: auto;
+}
+
+.vehicle-categories {
+    padding: 40px;
+    background-color: #0077b6;
+    color: white;
+    text-align: center;
+}
+.vehicle-categories h2 {
+color: #f0f0f0;
+}
+
+.vehicle-categories .category-cards {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px 0;
+    flex-wrap: wrap;
+    align-items: c;
+    justify-content: center;
+}
+.vehicle-categories .card {
+    background-color: white;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 8px;
+    cursor: pointer;
+    flex-grow: 1;
+    text-align: center;
+    transition: transform 0.3s ease;
+    height: 287.5px;
+    align-items: center;
+}
+#carimg {
+    margin: 30px;
+}
+
+.vehicle-categories .card:hover {
+    transform: scale(1.05);
+}
+.vehicle-categories .category-img {
+    max-width: 250px;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+.vehicle-categories .category-description {
+    font-size: 1em;
+    color: #333;
+    margin-top: 10px;
+    font-weight: 600;
+}
+.vehicle-categories button {
+    border-radius: 5px;
+    font-size: 1em;
+    color: white;
+    transition: background-color 0.3s ease;
+    background-color: #00b4d8;
+    padding: 15px 30px;
+    border: none;
+    cursor: pointer;
+}
+.vehicle-categories button:hover {
+    background-color: #0091b2;
+}
+
+.sell-trade {
+    display: flex;
+    padding: 40px;
+    background-color: #fff;
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+}
+.sell-trade h3 {
+    font-size: 2em;
+    color: #333;
+    margin-bottom: 20px;
+}
+.sell-trade p {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+}
+.sell-trade-frame {
+    display: inline-block;
+    border: 10px solid #0077b6;
+    border-radius: 12px;
+    padding: 10px;
+    margin-bottom: 20px;
+    width: 32%;
+}
+.sell-trade-frame img {
+    height: 30vh;
+    width: 30vw;
+}
+.sell-trade-img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+.sell-trade button {
+    border-radius: 5px;
+    font-size: 1em;
+    color: white;
+    transition: background-color 0.3s ease;
+    background-color: #00b4d8;
+    padding: 15px 30px;
+    border: none;
+    cursor: pointer;
+}
+.sell-trade button:hover {
+    background-color: #0091b2;
+}
+
+@media screen and (max-width: 768px) {
+    .sell-trade-frame {
+        width: 90%;
+        height: 45%;
+    }
+    }
+
+.payment-info {
+    padding: 40px;
+    background-color: white;
+    text-align: center;
+  }
+  
+  .payment-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f4f4f4;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .payment-details {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+  
+  .payment-text {
+    display: flex;
+    flex-direction: column;
+    background-color: #00b4d8;
+    color: white;
+    padding: 15px 30px;
+    border-radius: 8px;
+    max-width: 350px;
+    text-align: left;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .payment-text p {
+    font-size: 1rem;
+    margin: 5px;
+  }
+  .payment-text h4 {
+    margin: 7px;
+  }
+
+  .payment-car img {
+    max-width: 300px;
+    height: auto;
+    margin-left: 30px;
+  }
+  
+  .payment-text::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    right: -20px;
+    width: 0;
+    height: 0;
+    border-left: 20px solid #00b4d8;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    transform: translateY(-50%);
+  }
+  
+  .payment-footer p {
+    font-size: 1.1em;
+    margin: 10px 0;
+  }
+  
+  .payment-footer button {
+    background-color: #00b4d8;
+    padding: 15px 30px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 1em;
+    color: white;
+    transition: background-color 0.3s ease;
+  }
+  
+  .payment-footer button:hover {
+    background-color: #0091b2;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .payment-details {
+      flex-direction: column;
+      align-items: center;
+    }
+    
+    .payment-car img {
+      max-width: 100%;
+      margin-left: 0;
+      margin-top: 20px;
+    }
+    
+    .payment-text {
+      max-width: 90%;
+      margin-bottom: 20px;
+    }
+  }
+
+footer {
+    background-color: #0077b6;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+footer .footer-links a {
+    color: white;
+    margin: 0 15px;
+    text-decoration: none;
+}
+footer p {
+    margin-top: 10px;
+}
+
+@media screen and (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: center;
+        padding: 15px;
+    }
+    header .logo img {
+        width: 100px;
+    }
+
+    .main {
+        flex-direction: column;
+        padding: 20px;
+    }
+    .main .cta-container {
+        width: 100%;
+        text-align: center;
+    }
+    .main .cta-buttons button {
+        width: 100%;
+        margin: 10px 0;
+    }
+    .main img {
+        max-width: 100%;
+        height: auto;
+        margin-top: 20px;
+    }
+
+    .vehicle-categories .category-cards {
+        flex-direction: column;
+        align-items: center;
+    }
+    .vehicle-categories .card {
+        width: 80%;
+        margin-bottom: 20px;
+    }
+
+    .sell-trade {
+        padding: 20px;
+    }
+    .sell-trade-frame img {
+        height: auto;
+        width: 100%;
+    }
+
+    .payment-info {
+        padding: 20px;
+    }
+
+    footer .footer-links {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    footer .footer-links a {
+        margin-bottom: 10px;
+    }
+}
