@@ -1,4 +1,4 @@
-### EXTRAER "node_modules.rar" ANTES DE EJECUTAR LA APP ###
+### EJECUTAR npm install EN EL TERMINAL ANTES DE EJECUTAR LA APP ###
 # Pagina web estatica venta de autos practica.
 # React + Vite
 
